@@ -8,6 +8,16 @@
 <script>
 import NavBar from "@/components/NavBar.vue"
 export default {
+	head() {
+		return {
+			titleTemplate: "%s - Real World Events",
+			meta: [{
+				hid: "description",
+				name: "description", // <-- for our meta description tag
+				content: "Where you can find all the events taking place in your neighborhood"
+			}]
+		}
+	},
 	components: {
 		NavBar
 	}
